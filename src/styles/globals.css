@@ -1,0 +1,102 @@
+.contain {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  top: 8%;
+  position: absolute;
+}
+
+.title {
+  text-align: Acenter;
+  color: #333;
+}
+
+.title span {
+  color: #FF5733; /* Adjust color as needed */
+}
+
+.description {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+  
+}
+
+.grid {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  
+
+  
+}
+
+.card {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+  margin: 0 10px 20px 20px;
+  
+}
+.card img {
+  height: 200px; /* Set the height as needed */
+  width: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.card p {
+  margin-bottom: 0;
+  color: #666;
+}
+.fm-frequencies {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: blue;
+}
+
+.fm-frequency {
+  background-color: #9c9696;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px auto;
+  width: 300px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  animation: slideIn 5s ease-in-out infinite alternate;
+  position: absolute;
+  left: 40%;
+  top: 80%;
+
+}
+.fm-frequency p span {
+  font-weight: bold;
+  color: #333333;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fm-frequency span {
+  font-weight: bold;
+}
